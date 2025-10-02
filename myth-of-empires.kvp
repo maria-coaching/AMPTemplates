@@ -35,7 +35,7 @@ App.ExecutableLinux=/usr/bin/wine
 App.WorkingDir=1794810
 App.LinuxCommandLineArgs="{{$FullBaseDir}}MOE/Binaries/Win64/MOEServer.exe" {{$CommandLineArgs}} -server -log
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$PlatformArgs}} MOE {{Map}} -game -server -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -NoSteam
+App.CommandLineArgs={{$PlatformArgs}} {{Map}} -server -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -NoSteam
 App.UseLinuxIOREDIR=False
 App.AppSettings={"Map":"/Game/Maps/OfficialMap/OfficialMap?listen"}
 App.EnvironmentVariables={
