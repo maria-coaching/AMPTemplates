@@ -37,7 +37,7 @@ App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs=MOE/Binaries/Win64/MOEServer.exe {{Map}} -server -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -log
 App.UseLinuxIOREDIR=False
-App.AppSettings={"Map":"/Game/Maps/OfficialMap/OfficialMap?listen"}
+App.AppSettings={"Map":"/Game/Maps/LargeTerrain_Central_Main?listen"}
 App.EnvironmentVariables={
   "SteamAppId":"1794810",
   "WINEDEBUG":"-all",
