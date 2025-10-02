@@ -33,7 +33,7 @@ App.SteamWorkshopDownloadLocation={{$FullBaseDir}}MOE/Binaries/Win64/Mods
 App.ExecutableWin=1794810\MOE\Binaries\Win64\MOEServer.exe
 App.ExecutableLinux=/usr/bin/wine
 App.WorkingDir=1794810
-App.LinuxCommandLineArgs={{$FullBaseDir}}MOE/Binaries/Win64/MOEServer.exe {{Map}} -server -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -log
+App.LinuxCommandLineArgs="{{$FullBaseDir}}MOE/Binaries/Win64/MOEServer.exe" "{{Map}}" -server -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -log
 App.WindowsCommandLineArgs=
 App.CommandLineArgs=
 App.UseLinuxIOREDIR=False
