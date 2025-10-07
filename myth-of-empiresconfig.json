@@ -610,7 +610,7 @@
         "Keywords": "sleep,offline,player,character,destroy,SleepPlayerCharacterDestroyDays",
         "FieldName": "SleepPlayerCharacterDestroyDays",
         "InputType": "number",
-        "MinValue": "0"
+        "MinValue": "0",
         "ParamFieldName": "SleepPlayerCharacterDestroyDays",
         "IncludeInCommandLine": true,
         "DefaultValue": "7",
