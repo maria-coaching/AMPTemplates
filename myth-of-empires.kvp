@@ -32,7 +32,7 @@ App.BaseDirectory=./moe/1794810/
 App.SteamWorkshopDownloadLocation={{$FullBaseDir}}MOE/Binaries/Win64/Mods
 App.ExecutableLinux=Xvfb
 App.WorkingDir=1794810
-App.LinuxCommandLineArgs= :99 -screen 0 1024x768x16 -nolisten tcp &
+App.LinuxCommandLineArgs= :99 -screen 0 1024x768x16 -nolisten tcp & ;
 App.CommandLineArgs=/usr/bin/wine {{ServerBinary}} {{Map}} -server -NullRHI -NoSound -DataLocalFile -NotCheckServerSteamAuth -stdout -FullStdOutLogOutput log={{ServerListId}}.log -LOCALLOGTIMES -PrivateServer -Port={{$GamePort}} -QueryPort={{$QueryPort}} -ShutDownServicePort={{$RCONPort}} -bStartShutDownServiceInPrivateServer=true -MultiHome={{$ApplicationIPBinding}} -ShutDownServiceIP={{$ApplicationIPBinding}} -OutAddress={{OutAddress}} -SessionName="{{SessionName}}" -SteamServerName="{{SessionName}}" -ShutDownServiceKey="{{$RemoteAdminPassword}}" -pakdir="{{$FullBaseDir}}MOE/{{ServerListId}}Mods" {{UseACE}}{{ForceSteamNet}}{{$FormattedArgs}} {{CustomArgs}} -log
 App.UseLinuxIOREDIR=False
 App.AppSettings={"Map":"LargeTerrain_Central_Main"}
